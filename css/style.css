@@ -1,0 +1,211 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    margin: 0;
+    overflow-x: hidden;
+    /* 
+    background-image: url(https://static.vecteezy.com/system/resources/previews/003/273/882/original/wave-blue-background-wallpaper-free-vector.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-color: rgb(223, 236, 236); */
+} 
+
+html {
+  scroll-behavior: smooth;
+} 
+
+.h5blod{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.service-color{
+    background-color: rgb(196, 248, 251);
+} 
+.exp-bg{
+    background-image:url(../images/work.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 30%;
+
+}
+/* Only for demo purposes. */
+
+/* Start Gallery CSS */
+.thumb {
+	margin-bottom: 15px;
+}
+.thumb:last-child {
+	margin-bottom: 0;
+}
+/* CSS Image Hover Effects: https://www.nxworld.net/tips/css-image-hover-effects.html */
+.thumb 
+figure img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+.thumb 
+figure:hover img {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+.img-box{
+  border-radius: 15px;
+}
+/* testmonials */
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: poppins;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+#testimonials{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width:100%;
+}
+.testimonial-heading{
+  letter-spacing: 1px;
+  margin: 30px 0px;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-heading span{
+  font-size: 1.3rem;
+  color: #252525;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.testimonial-box-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width:100%;
+}
+.testimonial-box{
+  width:500px;
+  box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 15px;
+  cursor: pointer;
+}
+.profile-img{
+  width:50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.profile-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.profile{
+  display: flex;
+  align-items: center;
+}
+.name-user{
+  display: flex;
+  flex-direction: column;
+}
+.name-user strong{
+  color: #3d3d3d;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+.name-user span{
+  color: #979797;
+  font-size: 0.8rem;
+}
+.reviews{
+  color: #f9d71c;
+}
+.box-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.client-comment p{
+  font-size: 0.9rem;
+  color: #4b4b4b;
+}
+.testimonial-box:hover{
+  transform: translateY(-10px);
+  transition: all ease 0.3s;
+}
+
+@media(max-width:1060px){
+  .testimonial-box{
+      width:45%;
+      padding: 10px;
+  }
+}
+@media(max-width:790px){
+  .testimonial-box{
+      width:100%;
+  }
+  .testimonial-heading h1{
+      font-size: 1.4rem;
+  }
+}
+@media(max-width:340px){
+  .box-top{
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+  }
+  .reviews{
+      margin-top: 10px;
+  }
+}
+::selection{
+  color: #ffffff;
+  background-color: #252525;
+}
+.bodyfrom{
+  background: -webkit-linear-gradient(left, #0072ff, #00c6ff);
+}
+.my-form {
+  color: #305896;
+}
+.my-form .btn-default {
+  background-color: #305896;
+  color: #fff;
+  border-radius: 0;
+}
+.my-form .btn-default:hover {
+  background-color: #4498C6;
+  color: #fff;
+}
+.my-form .form-control {
+  border-radius: 0;
+}
+
+/* Contact form */
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px ;
+  right: 20px;
+  background-color:  #6c63ff;
+  color: #000;
+}
+
+

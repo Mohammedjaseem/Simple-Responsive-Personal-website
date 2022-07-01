@@ -410,20 +410,20 @@
 					<div class="col-md-6">
 						<form action="https://formsubmit.co/cea75a08bdf74cae180fd13e4fe34599" method="POST" class="my-form" style="font-family: 'Poppins', sans-serif;">
 							<div class="form-group">
-								<label for="form-name">Name</label>
-								<input type="text" class="form-control" id="form-name" name="eame" placeholder="Name">
+								<label for="cname">Name</label>
+								<input type="text" class="form-control" id="form-name" name="name" minlength="2" placeholder="Name" required="required " data-error="Name is required. ">
 							</div>
 							<div class="form-group">
-								<label for="form-email">Email Address</label>
-								<input type="email" class="form-control" id="form-email" name="email" placeholder="Email Address">
+								<label for="cemail">Email Address</label>
+								<input type="email" class="form-control" id="form-email" name="email" placeholder="Email Address" required="required " data-error="Email is required. ">
 							</div>
 							<div class="form-group">
-								<label for="form-subject">Telephone</label>
-								<input type="text" class="form-control" id="form-subject" name="mobile" placeholder="Mobile number">
+								<label for="cphone">Telephone</label>
+								<input type="number" class="form-control" id="form-subject" minlength="10" name="mobile" placeholder="Mobile number" required="required " data-error="Telephone is required. ">
 							</div>
 							<div class="form-group">
-								<label for="form-message">Enter your Message</label>
-								<textarea class="form-control" id="form-message" name="message" placeholder="Message"></textarea>
+								<label for="cmessage">Enter your Message</label>
+								<textarea class="form-control" id="form-message" name="message" placeholder="Message" required="required " data-error="Please enter your Valubale Message. "></textarea>
 							</div>
 							<button class="btn btn-default" style="border-radius:5px ;" onclick="">Send Now</button>                
 						</form>
@@ -526,6 +526,13 @@
 	<script src="Script/script.js"></script>
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    <script>
+        // user have to use id for form and call validate method
+        $("#commonForm").validate();
+    </script>
 	<script>
 		$(document).ready(function(){
 			$("#myModal").modal('show');

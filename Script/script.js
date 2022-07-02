@@ -8,6 +8,17 @@ $(document).on("click", '[data-toggle="lightbox"]', function(event) {
 });
 
 
+      function myFunction2() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+
+
+
 
 // smooth scrolling when clicking an anchor link 
 $('.nav-item a').on('click', function () {
@@ -23,4 +34,5 @@ $('.nav-item a').on('click', function () {
 
   }
 });
+
 

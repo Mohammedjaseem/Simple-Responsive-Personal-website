@@ -18,8 +18,9 @@ html {
   background-color: #404eed; /* Green */
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 12px 28px;
   text-align: center;
+  border-radius: 25px;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;

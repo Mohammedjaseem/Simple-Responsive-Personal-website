@@ -1,6 +1,13 @@
 function myFunction() {
-	alert("Hello! I am an alert box!");
+	alert("Hello!, You Poked Jaseem");
   }
+
+$(document).on("click", '[data-toggle="lightbox"]', function(event) {
+  event.preventDefault();
+  $(this).ekkoLightbox();
+});
+
+
 
 // smooth scrolling when clicking an anchor link 
 $('.nav-item a').on('click', function () {

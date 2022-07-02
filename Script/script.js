@@ -1,5 +1,9 @@
 function myFunction() {
-	alert("Hello!, You Poked Jaseem");
+	Swal.fire({
+		title: "<i>Poked successfully!</i>", 
+		html: "Now you Contact Jassy <br><b>+91 8086 5000 23</b>",  
+		confirmButtonText: "<u>Close</u>", 
+	  });
   }
 
 $(document).on("click", '[data-toggle="lightbox"]', function(event) {

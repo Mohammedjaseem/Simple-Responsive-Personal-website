@@ -14,6 +14,17 @@ html {
   scroll-behavior: smooth;
 } 
 
+.button {
+  background-color: #404eed; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
 .h5blod{
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;

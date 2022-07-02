@@ -1,8 +1,6 @@
-$(document).on("click", '[data-toggle="lightbox"]', function(event) {
-  event.preventDefault();
-  $(this).ekkoLightbox();
-});
-
+function myFunction() {
+	alert("Hello! I am an alert box!");
+  }
 
 // smooth scrolling when clicking an anchor link 
 $('.nav-item a').on('click', function () {
@@ -19,29 +17,3 @@ $('.nav-item a').on('click', function () {
   }
 });
 
-
-<script>
-	function gotowhatsapp() {
-		
-		var name  = document.getElementById("wanames").value;
-		var place = document.getElementById("waplace").value;
-		var phone = document.getElementById("wamob").value;
-		var note  = document.getElementById("wanote").value;
-		var date  = document.getElementById("wadate").value;
-		var time  = document.getElementById("watime").value;
-		var treat  = document.getElementById("watreat").value;
-
-		var url = "https://wa.me/918086500023?text="
-
-		+ "Hello Doctor, here is my details for booking "+ "%0a" 
-		+ "Name: " + name + "%0a"
-		+ "Place: " + place + "%0a"
-		+ "Phone: " + phone + "%0a"
-		+ "Treatment: " + treat + "%0a"
-		+ "Note: " + note + "%0a"
-		+ "Date: " + date + "%0a"
-		+ "Time: " + time; 
-
-		window.open(url, '_blank');
-	}
-	</script>

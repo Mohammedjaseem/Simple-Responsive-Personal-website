@@ -209,10 +209,11 @@ a{
 
 #btn-back-to-top {
   position: fixed;
-  bottom: 20px ;
+  bottom: 20px;
   right: 20px;
-  background-color:  #6c63ff;
+  background-color: #6c63ff;
   color: #000;
+  z-index: 1;
 }
 .topnav {
   overflow: hidden;
